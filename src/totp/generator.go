@@ -118,7 +118,7 @@ func (t *TotpToken) Generate() string {
 	t.cleanSecret()
 	t.decodeSecret()
 	// detect proper digest if none provided
-	if t.Digest == "none" {
+	if t.Digest == "" {
 		t.detectDigest()
 	}
 	// prepare counter

@@ -10,10 +10,10 @@ import (
 func main() {
 
 	// input flags
-	fStep := flag.Int("step", 30, "Time step(seconds) after which new key is generated (default: 30)")
-	fDigits := flag.Int("digits", 6, "Number of digits for the generated keys (default: 6)")
-	fDigest := flag.String("digest", "none", "Digest to use, valid options(one of): sha1, sha256, sha512 (default: auto detects by key size)")
-	fKey := flag.String("key", "", "Base32 encoded key to use (optional, if key is piped in)")
+	fStep := flag.Int("step", 30, "Time step(seconds) after which new key is generated")
+	fDigits := flag.Int("digits", 6, "Number of digits for the generated keys")
+	fDigest := flag.String("digest", "", "Digest to use, valid options(one of): sha1, sha256, sha512")
+	fKey := flag.String("key", "", "Base32 encoded key to use (optional, will be read from Stdin if not set)")
 	flag.Parse()
 
 	// collect the secret
