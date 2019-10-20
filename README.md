@@ -103,6 +103,8 @@ TOKEN: 675179
 The project was inspired by [MinTOTP](https://github.com/susam/mintotp) by [Susam Pal](https://github.com/susam),
 posted on [HackerNew](https://news.ycombinator.com/item?id=21297664). 
 
+The project was translated in Go to generate (cross-)compiled binaries that are easier to distribute & run on most environments.
+
 Some of the minor changes made were introduced following
 
 - [RFC-6238](https://tools.ietf.org/html/rfc6238)
